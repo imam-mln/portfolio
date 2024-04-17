@@ -69,11 +69,16 @@ function Design() {
                       className={`w-[18vw] sm:w-[6rem] md:w-[6.32rem] xl:w-[6.4rem]`}
                       padding={0}>
                       <div
-                        className="h-auto w-fit text-center h-auto"
+                        className="h-auto w-fit text-center"
                         onClick={() => {
                           setActive(i)
                         }}>
-                        <img src={el.img[0]} alt={el.title} className="w-80" />
+                        <img
+                          src={el.img[0]}
+                          alt={el.title}
+                          className="w-80"
+                          loading="lazy"
+                        />
                         {active === i ? (
                           <Overlay color="#000" backgroundOpacity={0.2} />
                         ) : (
@@ -99,7 +104,12 @@ function Design() {
                   duration: 0.5,
                   delay: 0.2,
                 }}>
-                <Suspense fallback={<Loader color="gray" />}>
+                <Suspense
+                  fallback={
+                    <div className="w-full h-96 flex justify-center items-center">
+                      <Loader type="dots" color="gray" size="xl" />
+                    </div>
+                  }>
                   <MyCarousel
                     title={MyDesign[active].title}
                     img={MyDesign[active].img}

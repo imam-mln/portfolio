@@ -21,6 +21,7 @@ export default function MyCarousel({ title, img }: MyCarouselProps) {
             className="h-fit xl:h-[74.5vh] w-fit border-2 border-slate-200"
             src={image}
             alt={`Slide ${i + 1}`}
+            width={"100%"}
           />
         </Carousel.Slide>
       ))}

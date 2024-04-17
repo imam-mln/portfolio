@@ -21,35 +21,6 @@ function App() {
   const [winSize, setWinSize] = useState(window.innerWidth)
 
   useEffect(() => {
-    const updateFavicon = () => {
-      const isDarkMode =
-        window.matchMedia &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches
-      const favicon = document.getElementById(
-        "favicon"
-      ) as HTMLLinkElement | null
-
-      if (favicon) {
-        favicon.href = isDarkMode
-          ? "/logo-imam-light.svg"
-          : "/logo-imam-dark.svg"
-      }
-    }
-
-    updateFavicon() // Pembaruan saat komponen dimuat
-
-    // Daftarkan listener untuk pembaruan tema
-    window
-      .matchMedia("(prefers-color-scheme: dark)")
-      .addEventListener("change", updateFavicon)
-
-    updateFavicon() // Pembaruan saat komponen dimuat
-
-    // Daftarkan listener untuk pembaruan tema
-    window
-      .matchMedia("(prefers-color-scheme: dark)")
-      .addEventListener("change", updateFavicon)
-
     window.onresize = () => {
       setWinSize(window.innerWidth)
       // console.log("height: ", window.innerHeight, "px")

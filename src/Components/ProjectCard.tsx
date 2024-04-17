@@ -1,5 +1,5 @@
 import { IconType } from "react-icons"
-import { Card, Overlay, Tooltip } from "@mantine/core"
+import { Card, Overlay, Tooltip, Loader } from "@mantine/core"
 import { useHover } from "@mantine/hooks"
 import { LazyLoadImage } from "react-lazy-load-image-component"
 
@@ -87,11 +87,15 @@ export default function ProjectCard({ project }: Data) {
         )}
         {project.img !== undefined ? (
           <LazyLoadImage
+            width={600}
+            height={400}
             src={project.img}
             alt={project.title}
-            // effect="blur"
-            height={400}
-            width={700}
+            placeholder={
+              <span className="w-full h-full flex justify-center items-center">
+                <Loader color="gray" size="xl" type="dots" />
+              </span>
+            }
           />
         ) : (
           <div className="relative">

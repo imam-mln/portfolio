@@ -17,7 +17,7 @@ function Navbar() {
 
   return (
     <>
-      <header className="w-[100%] backdrop-blur-xl sticky absolute top-0 z-[210]">
+      <header className="w-[100%] backdrop-blur-xl sticky top-0 z-[210]">
         <nav className="max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto py-3">
           <div className="flex justify-between items-center px-5 lg:p-0 ">
             <div>
