@@ -1,0 +1,18 @@
+<svg id="ejdDYTX1C2L1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 260 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+<style>
+		path {
+			fill: #000000;
+		}
+		rect {
+			fill: #000000;
+		}
+		@media ( prefers-color-scheme: dark ) {
+			path {
+				fill: #ffffff;
+			}
+            rect {
+			fill: #ffffff;
+		}
+		}
+	</style>
+<g transform="matrix(1.74608 0 0 1.74608-131.912333-86.0816)"><path d="M80.6931,90.92197h138.6138L200.81412,113.6199h-.00001l-33.05544,40.57204l33.05544,40.57204h.00001l18.49278,22.69793h-138.6138l18.49278-22.69792l16.29293-19.99784l16.69677,19.99784h33.07966l-33.03468-40.54656l33.03468-40.59754h-33.07966l-16.69677,19.99784-16.29293-19.99784L80.6931,90.92197Z" fill="black" stroke-width="0"/><rect width="138.614" height="26.6154" rx="0" ry="0" transform="matrix(1.00001 0 0 1 80.6925 52.8914)" fill="black" stroke-width="0"/></g></svg>
