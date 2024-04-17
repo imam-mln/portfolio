@@ -1,11 +1,42 @@
 <!doctype html>
 <html lang="en">
   <head>
+<script>
+  const updateFavicon = () => {
+      const isDarkMode =
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches
+      const favicon = document.getElementById(
+        "favicon"
+      ) 
+
+      if (favicon) {
+        favicon.href = isDarkMode
+          ? "/logo-imam-light.svg"
+          : "/logo-imam-dark.svg"
+      }
+    }
+
+    updateFavicon() // Pembaruan saat komponen dimuat
+
+    // Daftarkan listener untuk pembaruan tema
+    window
+      .matchMedia("(prefers-color-scheme: dark)")
+      .addEventListener("change", updateFavicon)
+
+    updateFavicon() // Pembaruan saat komponen dimuat
+
+    // Daftarkan listener untuk pembaruan tema
+    window
+      .matchMedia("(prefers-color-scheme: dark)")
+      .addEventListener("change", updateFavicon)
+</script>
+
     <meta charset="UTF-8" />
-    <link id="favicon" rel="icon" type="image/svg+xml"/>
+    <link id="favicon" rel="icon" type="image/svg+xml" href="/portfolio/logo-imam-dark.svg"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Imam | Portfolio</title>
-    <script type="module" crossorigin src="/portfolio/assets/index-BmXiA1-M.js"></script>
+    <script type="module" crossorigin src="/portfolio/assets/index-C5jn7Qb_.js"></script>
     <link rel="stylesheet" crossorigin href="/portfolio/assets/index-K_NdsuOR.css">
   </head>
   <body>
