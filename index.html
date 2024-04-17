@@ -1,13 +1,628 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link id="favicon" rel="icon" type="image/svg+xml"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Imam | Portfolio</title>
-  </head>
-  <body>
-    <div id="root" class="font-poppins select-none"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--     <meta itemprop="image" content="./img/imam.jpg"> -->
+    <meta property="og:image" content="https://raw.githubusercontent.com/imammay24/Portfolio/master/img/imam.jpg"/>
+
+    <!-- START JAVASCRIPT -->
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- END JAVASCRIPT -->
+
+    <!-- START CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <!-- END CSS -->
+
+    <!-- START OWLCAROUSEL -->
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <!-- END OWLCAROUSEL -->
+
+    <!-- START FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <!-- END FONTS -->
+
+    <!-- START ICON TAB -->
+    <link href="img/person-circle.svg" rel="icon">
+    <!-- END ICON TAB -->
+
+    <title>My Portfolio</title>
+</head>
+<body style="background-color: #ddd;">
+
+    <!-- START CONTAINER -->
+    <div class="container">
+
+        <!-- START SECTION HERO -->
+        <section class="sec-hero shadow bg-body p-3 mb-5 rounded">
+            <div class="hero text-center">
+                <img src="img/imam.jpg" alt="" class="rounded-circle hero-image">
+                <div class="name text-primary">
+                    <h2 class="text-uppercase">Imam Maulana</h2>
+                    <h6>Mahasiswa STMIK IKMI Cirebon</h6>
+                </div>
+            </div>
+        </section>
+        <!-- END SECTION HERO -->
+
+
+        <!-- START SECTION ABOUT -->
+        <section class="bg-body shadow p-3 mb-5 rounded">
+            <div class="about container">
+                <!-- START HEADER ABOUT -->
+                <div class="header-about mb-3 text-center">
+                    <h3 class="border-bottom border-primary border-3 text-primary text-uppercase">About Me</h3>
+                </div>
+                <!-- END HEADER ABOUT -->
+                
+                <!-- START CONTENT ABOUT -->
+                <div class="about-content row gap-lg-4">
+                    <div class="col-md about-content-desc">
+                        <h5 class="text-center text-primary mt-sm-3 mb-sm-3">Description</h5>
+                        <p>&emsp;Saya Imam Maulana, seorang Mahasiswa <span class="text-danger">STMIK IKMI Cirebon</span> Angkatan Tahun 2020. Saya berasal dari Majalengka dan sekarang berdomisili di Cirebon. Lingkup keterampilan dan minat saya dominan di bidang IT khususnya <span class="text-danger">Web Development</span>.</p>
+                        <p>&emsp;Ketertarikan saya terhadap Web Development sangat tinggi baik itu Front-End maupun Back-End. Fokus saya sekarang ada di <span class="text-danger">Front-End Web Development</span>, tapi itu tidak menutup kemungkinan saya untuk menjamah seputar Back-End Web Development.</p>
+                        <p>&emsp;Walaupun saya tidak memiliki pengalaman kerja tetapi saya pernah melakukan Praktek Kerja Industri serta menjadi seorang Freelancer di suatu instansi. Saya memiliki <span class="text-danger">keingintahuan yang tinggi</span> sehingga saya selalu ingin mempelajari hal-hal yang baru. Selain itu, saya juga memiliki kecermatan serta ketelitian yang lumayan tinggi ketika saya akan berlayar di dunia IT.</p>
+                    </div>
+                    <div class="col-md separator">
+                        <hr>
+                    </div>
+                    <div class="col-md about-content-edu">
+                        <!-- START HEADER EDUCATION -->
+                        <h5 class="text-center text-primary mt-sm-3 mb-sm-3">Education</h5>
+                        <!-- END HEADER EDUCATION -->
+
+                        <!-- START CONTENT-EDUCATION -->
+                        <div class="content-edu text-center">
+                            <!-- START ITEM EDU 1 -->
+                            <div class="edu-item card container" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <!-- START IMAGE CARD EDUCATION -->
+                                    <div class="col-4">
+                                        <img src="img/education/sd.png" class="img-fluid rounded-start" alt="SDN Lame III">
+                                    </div>
+                                    <!-- END IMAGE CARD EDUCATION -->
+
+                                    <!-- START DESC EDUCATION -->
+                                    <div class="col-8 m-auto">
+                                        <div class="card-body">
+                                            <h5 class="card-title">SDN Lame III</h5>
+                                            <p class="card-title text-secondary">Tahun 2007 - 2014</p>
+                                        </div>
+                                    </div>
+                                    <!-- START DESC EDUCATION -->
+                                </div>
+                            </div>
+                            <!-- END ITEM EDU 1 -->
+
+                            <i class="bi bi-arrow-down"></i>
+                            
+                            <!-- START ITEM EDU 2 -->
+                            <div class="edu-item card container" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <!-- START IMAGE CARD EDUCATION -->
+                                    <div class="col-4">
+                                        <img src="img/education/sltp.png" class="img-fluid rounded-start" alt="MTsN I Majalengka">
+                                    </div>
+                                    <!-- END IMAGE CARD EDUCATION -->
+
+                                    <!-- START DESC EDUCATION -->
+                                    <div class="col-8 m-auto">
+                                        <div class="card-body">
+                                            <h5 class="card-title">MTsN I Majalengka</h5>
+                                            <p class="card-title text-secondary">Tahun 2014 - 2017</p>
+                                        </div>
+                                    </div>
+                                    <!-- START DESC EDUCATION -->
+                                </div>
+                            </div>
+                            <!-- END ITEM EDU 2 -->
+
+                            <i class="bi bi-arrow-down"></i>
+
+                            <!-- START ITEM EDU 3 -->
+                            <div class="edu-item card container" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <!-- START IMAGE CARD EDUCATION -->
+                                    <div class="col-4">
+                                        <img src="img/education/slta.png" class="img-fluid rounded-start" alt="SMK Arrahmat Palasah">
+                                    </div>
+                                    <!-- END IMAGE CARD EDUCATION -->
+
+                                    <!-- START DESC EDUCATION -->
+                                    <div class="col-8 m-auto">
+                                        <div class="card-body">
+                                            <h5 class="card-title">SMK Arrahmat Palasah</h5>
+                                            <p class="card-title text-secondary">Tahun 2017 - 2020</p>
+                                        </div>
+                                    </div>
+                                    <!-- START DESC EDUCATION -->
+                                </div>
+                            </div>
+                            <!-- END ITEM EDU 3 -->
+
+                            <i class="bi bi-arrow-down"></i>
+
+                            <!-- START ITEM EDU 4 -->
+                            <div class="edu-item card container" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <!-- START IMAGE CARD EDUCATION -->
+                                    <div class="col-4">
+                                        <img src="img/education/s1.png" class="img-fluid rounded-start" alt="STMIK IKMI Cirebon">
+                                    </div>
+                                    <!-- END IMAGE CARD EDUCATION -->
+
+                                    <!-- START DESC EDUCATION -->
+                                    <div class="col-8 m-auto">
+                                        <div class="card-body">
+                                            <h5 class="card-title">STMIK IKMI Cirebon</h5>
+                                            <p class="card-title text-secondary">Tahun 2020 - Sekarang</p>
+                                        </div>
+                                    </div>
+                                    <!-- START DESC EDUCATION -->
+                                </div>
+                            </div>
+                            <!-- END ITEM EDU 4 -->
+                        </div>
+                        <!-- END CONTENT-EDUCATION -->
+
+                    </div>
+                </div>
+                <!-- END CONTENT ABOUT -->
+
+            </div>
+        </section>
+        <!-- END SECTION ABOUT -->
+
+
+        <!-- START SECTION SKILL  -->
+        <section class="bg-body shadow p-3 mb-5 rounded text-center">
+            <div class="skill container">
+                <!-- START HEADER SKILL -->
+                <div class="header-skill mb-3">
+                    <h3 class="border-bottom border-primary border-3 text-primary text-uppercase">Skill</h3>
+                </div>
+                <!-- END HEADER SKILL -->
+                
+                <!-- START CONTENT SKILL -->
+                <div class="content-skill">
+                    <div class="owl-carousel owl-theme">
+                        <!-- START HTML CARD -->
+                        <div class="item">
+                            <div class="card">
+                                <img src="img/skills/html-logo.png" class="card-img-top" alt="...">
+                                <div class="card-footer">
+                                    <span>HTML</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END HTML CARD -->
+
+                        <!-- START CSS CARD -->
+                        <div class="item">
+                            <div class="card">
+                                <img src="img/skills/css-logo.png" class="card-img-top" alt="...">
+                                <div class="card-footer">
+                                    <span>CSS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END CSS CARD -->
+
+                        <!-- START JAVASCRIPT CARD -->
+                        <div class="item">
+                            <div class="card">
+                                <img src="img/skills/javascript-logo.png" class="card-img-top" alt="...">
+                                <div class="card-footer">
+                                    <span>Javascript</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END JAVASCRIPT CARD -->
+
+                        <!-- START PHP CARD -->
+                        <div class="item">
+                            <div class="card">
+                                <img src="img/skills/php-logo.png" class="card-img-top" alt="...">
+                                <div class="card-footer">
+                                    <span>PHP</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END PHP CARD -->
+
+                        <!-- START MYSQL CARD -->
+                        <div class="item">
+                            <div class="card">
+                                <img src="img/skills/mysql-logo.png" class="card-img-top" alt="...">
+                                <div class="card-footer">
+                                    <span>MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END MYSQL CARD -->
+
+                        <!-- START BOOTSTRAP CARD -->
+                        <div class="item">
+                            <div class="card">
+                                <img src="img/skills/bootstrap-logo.png" class="card-img-top" alt="...">
+                                <div class="card-footer">
+                                    <span>Bootstrap</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END BOOTSTRAP CARD -->
+                        
+                        <!-- START JQUERY CARD -->
+                        <!-- <div class="item">
+                            <div class="card">
+                                <img src="img/skills/jquery-logo.jpg" class="card-img-top" alt="...">
+                                <div class="card-footer">
+                                    <span>JQuery</span>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- END JQUERY CARD -->
+
+                        <!-- START PHOTOSHOP CARD -->
+                        <div class="item">
+                            <div class="card">
+                                <img src="img/skills/photoshop-logo.png" class="card-img-top" alt="...">
+                                <div class="card-footer">
+                                    <span>Photoshop</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END PHOTOSHOP CARD -->
+                        
+                        <!-- START MS OFFICE CARD -->
+                        <div class="item">
+                            <div class="card">
+                                <img src="img/skills/msoffice-logo.png" class="card-img-top" alt="...">
+                                <div class="card-footer">
+                                    <span>Microsoft Office</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END MS OFFICE CARD -->
+
+                        <!-- START MIKROTIK CARD -->
+                        <div class="item">
+                            <div class="card">
+                                <img src="img/skills/mikrotik-logo.png" class="card-img-top" alt="...">
+                                <div class="card-footer">
+                                    <span>Mikrotik</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END MIKROTIK CARD -->
+                    </div>
+                </div>
+                <!-- END CONTENT SKILL -->
+            </div>
+        </section>
+        <!-- END SECTION SKILL  -->
+
+
+        <!-- START SECTION PORTFOLIO -->
+        <section class="bg-body shadow p-3 mb-5 rounded text-center">
+            <div class="portfolio container">
+                <!-- START HEADER PORTFOLIO -->
+                <div class="header-portfolio mb-4">
+                    <h3 class="border-bottom border-primary border-3 text-primary text-uppercase">Portfolio</h3>
+                </div>
+                <!-- END HEADER PORTFOLIO -->
+
+                <!-- START CONTENT PORTFOLIO -->
+                <div class="content-portfolio">
+                    <div class="container">
+                        <div class="row">
+                            <!-- START ITEMS PORTFOLIO 1 -->
+                            <div class="item-portf col-lg-4">
+                                <!-- START THUMBNAIL PORTFOLIO -->
+                                <div class="image-port-box position-relative" data-bs-toggle="modal" data-bs-target="#sert-trimedia">
+                                    <img src="img/portfolio/timedia-1.jpg" class="rounded img-fluid image-sert" alt="Sertifikat Channel Trimedia Cirebon">
+                                    <div class="overlay rounded">
+                                        <div class="text-light image-desc text-uppercase">
+                                            Sertifikat Channel Trimedia Cirebon
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- START THUMBNAIL PORTFOLIO -->
+                                
+                                <!-- START MODAL PORTFOLIO -->
+                                <div class="modal fade" id="sert-trimedia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-xl modal-fullscreen-md-down">
+                                        <div class="modal-content">
+                                            <!-- START MODAL HEADER -->
+                                            <div class="modal-header">
+                                                <h5 class="modal-title text-uppercase" id="exampleModalLabel">Sertifikat Channel Trimedia Cirebon</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <!-- START MODAL HEADER -->
+
+                                            <!-- START MODAL BODY -->
+                                            <div class="modal-body">
+                                                <img src="img/portfolio/timedia-1.jpg" class="img-fluid img-fluid shadow rounded p-3 mb-5" alt="Sertifikat Channel Trimedia Cirebon">
+                                                <br><br>
+                                                <img src="img/portfolio/timedia-2.jpg" class="img-fluid img-fluid shadow rounded p-3 mb-5" alt="Sertifikat Channel Trimedia Cirebon">
+                                            </div>
+                                            <!-- END MODAL BODY -->
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END MODAL PORTFOLIO -->
+                            </div>
+                            <!-- START ITEMS PORTFOLIO 1 -->
+
+                            <!-- START ITEMS PORTFOLIO 2 -->
+                            <div class="item-portf col-lg-4">
+                                <!-- START THUMBNAIL PORTFOLIO -->
+                                <div class="image-port-box position-relative" data-bs-toggle="modal" data-bs-target="#sert-telkom">
+                                    <img src="img/portfolio/tiwc-sertif-1.jpg" class="rounded img-fluid image-sert" alt="Sertifikat Prakerin Telkom Cirebon">
+                                    <div class="overlay rounded">
+                                        <div class="text-light image-desc text-uppercase">
+                                            Sertifikat Prakerin Telkom Cirebon
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- START THUMBNAIL PORTFOLIO -->
+                                
+                                <!-- START MODAL PORTFOLIO -->
+                                <div class="modal fade" id="sert-telkom" tabindex="-1" aria-labelledby="sert-telkom" aria-hidden="true">
+                                    <div class="modal-dialog modal-xl modal-fullscreen-md-down">
+                                        <div class="modal-content">
+                                            <!-- START MODAL HEADER -->
+                                            <div class="modal-header">
+                                                <h5 class="modal-title text-uppercase" id="sert-telkom">Sertifikat Prakerin Telkom Cirebon</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <!-- START MODAL HEADER -->
+
+                                            <!-- START MODAL BODY -->
+                                            <div class="modal-body">
+                                                <img src="img/portfolio/tiwc-sertif-1.jpg" class="img-fluid img-fluid shadow rounded p-3 mb-5" alt="Sertifikat Prakerin Telkom Cirebon">
+                                                <img src="img/portfolio/tiwc-sertif-2.jpg" class="img-fluid img-fluid shadow rounded p-3 mb-5" alt="Sertifikat Prakerin Telkom Cirebon">
+                                            </div>
+                                            <!-- END MODAL BODY -->
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END MODAL PORTFOLIO -->
+                            </div>
+                            <!-- START ITEMS PORTFOLIO 2 -->
+
+                            <!-- START ITEMS PORTFOLIO 3 -->
+                            <div class="item-portf col-lg-4">
+                                <!-- START THUMBNAIL PORTFOLIO -->
+                                <div class="image-port-box position-relative" data-bs-toggle="modal" data-bs-target="#sert-revou">
+                                    <img src="img/portfolio/revou-itda.jpg" class="rounded img-fluid image-sert" alt="Revou - intro To Data Analytics">
+                                    <div class="overlay rounded">
+                                        <div class="text-light image-desc text-uppercase">
+                                            Revou - intro To Data Analytics
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- START THUMBNAIL PORTFOLIO -->
+                                
+                                <!-- START MODAL PORTFOLIO -->
+                                <div class="modal fade" id="sert-revou" tabindex="-1" aria-labelledby="sert-revou" aria-hidden="true">
+                                    <div class="modal-dialog modal-xl modal-fullscreen-md-down">
+                                        <div class="modal-content">
+                                            <!-- START MODAL HEADER -->
+                                            <div class="modal-header">
+                                                <h5 class="modal-title text-uppercase" id="sert-revou">Revou - intro To Data Analytics</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <!-- START MODAL HEADER -->
+
+                                            <!-- START MODAL BODY -->
+                                            <div class="modal-body">
+                                                <img src="img/portfolio/revou-itda.jpg" class="img-fluid img-fluid shadow rounded p-3 mb-5" alt="Revou - intro To Data Analytics">
+                                            </div>
+                                            <!-- END MODAL BODY -->
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END MODAL PORTFOLIO -->
+                            </div>
+                            <!-- START ITEMS PORTFOLIO 3 -->
+
+                            <!-- START ITEMS PORTFOLIO 4 -->
+                            <div class="item-portf col-lg-4">
+                                <!-- START THUMBNAIL PORTFOLIO -->
+                                <div class="image-port-box position-relative" data-bs-toggle="modal" data-bs-target="#sert-uny">
+                                    <img src="img/portfolio/uny-lp.jpg" class="rounded img-fluid image-sert" alt="Universitas Negeri Yogyakarta - Lomba Poster">
+                                    <div class="overlay rounded">
+                                        <div class="text-light image-desc text-uppercase">
+                                            Universitas Negeri Yogyakarta - Lomba Poster
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- START THUMBNAIL PORTFOLIO -->
+                                
+                                <!-- START MODAL PORTFOLIO -->
+                                <div class="modal fade" id="sert-uny" tabindex="-1" aria-labelledby="sert-uny" aria-hidden="true">
+                                    <div class="modal-dialog modal-xl modal-fullscreen-md-down">
+                                        <div class="modal-content">
+                                            <!-- START MODAL HEADER -->
+                                            <div class="modal-header">
+                                                <h5 class="modal-title text-uppercase" id="sert-uny">Universitas Negeri Yogyakarta - Lomba Poster</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <!-- START MODAL HEADER -->
+
+                                            <!-- START MODAL BODY -->
+                                            <div class="modal-body">
+                                                <img src="img/portfolio/uny-lp.jpg" class="img-fluid border img-fluid shadow rounded p-3 mb-5" alt="Universitas Negeri Yogyakarta - Lomba Poster">
+                                            </div>
+                                            <!-- END MODAL BODY -->
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END MODAL PORTFOLIO -->
+                            </div>
+                            <!-- START ITEMS PORTFOLIO 4 -->
+
+                            <!-- START ITEMS PORTFOLIO 4 -->
+                            <div class="item-portf col-lg-4">
+                                <!-- START THUMBNAIL PORTFOLIO -->
+                                <div class="image-port-box position-relative" data-bs-toggle="modal" data-bs-target="#sert-rmi">
+                                    <img src="img/portfolio/rmi-lp.jpg" class="rounded img-fluid image-sert" alt="Ruang Mendengar Indonesia - Lomba Poster">
+                                    <div class="overlay rounded">
+                                        <div class="text-light image-desc text-uppercase">
+                                            Ruang Mendengar Indonesia - Lomba Poster
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- START THUMBNAIL PORTFOLIO -->
+                                
+                                <!-- START MODAL PORTFOLIO -->
+                                <div class="modal fade" id="sert-rmi" tabindex="-1" aria-labelledby="sert-rmi" aria-hidden="true">
+                                    <div class="modal-dialog modal-xl modal-fullscreen-md-down">
+                                        <div class="modal-content">
+                                            <!-- START MODAL HEADER -->
+                                            <div class="modal-header">
+                                                <h5 class="modal-title text-uppercase" id="sert-rmi">Ruang Mendengar Indonesia - Lomba Poster</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <!-- START MODAL HEADER -->
+
+                                            <!-- START MODAL BODY -->
+                                            <div class="modal-body">
+                                                <img src="img/portfolio/rmi-lp.jpg" class="img-fluid shadow rounded p-3 mb-5" alt="Ruang Mendengar Indonesia - Lomba Poster">
+                                            </div>
+                                            <!-- END MODAL BODY -->
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END MODAL PORTFOLIO -->
+                            </div>
+                            <!-- START ITEMS PORTFOLIO 4 -->
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- END CONTENT PORTFOLIO -->
+            </div>
+        </section>
+        <!-- END SECTION PORTFOLIO -->
+
+
+        <!-- START SECTION CONTACT -->
+        <section class="bg-body shadow p-3 mb-5 rounded">
+            <div class="contact container">
+                <!-- START HEADER CONTACT -->
+                <div class="row header-contact text-center mb-3">
+                    <h3 class="border-bottom border-primary border-3 text-primary text-uppercase">Contact Me</h3>
+                </div>
+                <!-- END HEADER CONTACT -->
+
+                <!-- START CONTENT CONTACT -->
+                <div class="row content-contact justify-content-center text-center mb-3">
+                    <!-- START ICON SOCMED -->
+                    <div class="row icon-socmed justify-content-center text-center mb-4">
+                        <!-- START ICON FB -->
+                        <div class="col col-md-2">
+                            <a href="https://web.facebook.com/people/Imam-Maulana-Anillah/100006006039879/" target="_blank">
+                                <i class="bi bi-facebook text-primary rounded"></i>
+                            </a>
+                        </div>
+                        <!-- END ICON FB -->
+
+                        <!-- START ICON WA -->
+                        <div class="col col-md-2">
+                            <a href="https://wa.me/6283153361809?text=Halo,%20Selamat%20Pagi.%20Saya%20ingin%20bertanya%20tentang%20..." target="_blank">
+                                <i class="bi bi-whatsapp text-success rounded"></i>
+                            </a>
+                        </div>
+                        <!-- END ICON WA -->
+
+                        <!-- START ICON LI -->
+                        <div class=" col col-md-2">
+                            <a href="https://www.linkedin.com/in/imammay24/" target="_blank">
+                                <i class="bi bi-linkedin text-info rounded"></i>
+                            </a>
+                        </div>
+                        <!-- END ICON LI -->
+
+                        <!-- START ICON IG -->
+                        <div class="col col-md-2">
+                            <a href="https://www.instagram.com/imam.may24/" target="_blank">
+                                <i class="bi bi-instagram text-danger rounded"></i>
+                            </a>
+                        </div>
+                        <!-- END ICON IG -->
+
+                    </div>
+                    <!-- END ICON SOCMED -->
+
+
+                    <!-- START EMAIL FORM -->
+                    <div class="row justify-content-center">
+                        <div class="col-md-7">
+                            <form action="https://formspree.io/f/xknyypqv" method="POST">
+                                <!-- START INPUT FULL NAME -->
+                                <div class="mb-3">
+                                    <label for="full-name" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="full-name" placeholder="Your Name" name="name" required autocomplete="off">
+                                </div>
+                                <!-- END INPUT FULL NAME -->
+    
+                                <!-- START INPUT EMAIL -->
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="yours@email.com" name="email" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" autocomplete="off">
+                                </div>
+                                <!-- END INPUT EMAIL -->
+    
+                                <!-- START INPUT QUESTIONS -->
+                                <div class="mb-3">
+                                    <label for="questions" class="form-label">Questions or Something</label>
+                                    <textarea class="form-control" id="questions" rows="8" name="questions" required autocomplete="off"></textarea>
+                                </div>
+                                <!-- END INPUT QUESTIONS -->
+    
+                                <!-- START BUTTON SEND -->
+                                <button class="button-send" type="submit">Send Email!</button>
+                                <!-- START BUTTON SEND -->
+    
+                            </form>
+                        </div>
+                    </div>
+                    <!-- START EMAIL FORM -->
+                </div>
+                <!-- END CONTENT CONTACT -->
+
+
+
+            </div>
+        </section>
+        <!-- END SECTION CONTACT -->
+
+        <!-- START COPYRIGHT -->
+        <div class="text-center mb-5">
+            <span class="text-secondary" disabled>
+                Imam Maulana ~ Copyright &copy; 2022
+            </span>
+        </div>
+        <!-- END COPYRIGHT -->
+
+    </div>
+    <!-- END CONTAINER -->
+
+</body>
 </html>
