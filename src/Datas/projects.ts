@@ -15,7 +15,7 @@ import RcCarHandGestures from '../assets/Projects/rc-car-hand-gestures.jpg'
 interface Link {
     media: string;
     link?: string;
-    icon?: IconType | undefined;
+    icon: IconType;
 }
 
 interface Data {

@@ -10,12 +10,12 @@ import { Design as MyDesign } from "../Datas/design"
 const MyCarousel = lazy(() => import("../Components/Carousel"))
 
 function Design() {
+  window.scrollTo(0, 0)
   const location = useLocation().pathname
   const [active, setActive] = useState(0)
   const winSize = useContext(WindowsSize)
 
   useEffect(() => {
-    // window.scrollTo(0, 0)
     location === "/"
       ? document.body.classList.add("overflow-y-hidden")
       : document.body.classList.remove("overflow-y-hidden")

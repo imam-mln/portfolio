@@ -7,10 +7,10 @@ import { WindowsSize } from "../App"
 const ExperiencesModal = lazy(() => import("../Components/Experiences"))
 
 interface CardStatus {
-  exp: boolean
+  exp?: boolean
   title: string
-  data: string[]
-  to: string
+  data: object[]
+  to?: string
 }
 
 function CardStatus({ title, data, to = "", exp = false }: CardStatus) {
@@ -37,7 +37,7 @@ function CardStatus({ title, data, to = "", exp = false }: CardStatus) {
               c="yellow"
               fw={700}
               ta="center"
-              size={winsiz < 1024 ? 25 : 40}>
+              size={winsiz < 1024 ? "25" : "40"}>
               {data.length}
             </Text>
           }

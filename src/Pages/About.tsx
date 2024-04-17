@@ -144,7 +144,7 @@ function About() {
                     </div>
                   </div>
                   <div className="xl:hidden pt-3">
-                    <ExperiencesModal sz="lg" tb="Experiences" />
+                    <ExperiencesModal tb="Experiences" />
                   </div>
                 </div>
               </div>

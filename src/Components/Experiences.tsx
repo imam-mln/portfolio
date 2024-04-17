@@ -7,11 +7,10 @@ import { WindowsSize } from "../App.tsx"
 import { Experiences } from "../Datas/experiences.ts"
 
 interface Data {
-  tb: string
-  sz: string
+  tb?: string
 }
 
-export default function ExperiencesModal({ tb = "Detail", sz = "md" }: Data) {
+export default function ExperiencesModal({ tb = "Detail" }: Data) {
   const [opened, { open, close }] = useDisclosure(false),
     winsiz = useContext(WindowsSize)
 
@@ -28,9 +27,9 @@ export default function ExperiencesModal({ tb = "Detail", sz = "md" }: Data) {
         }
         onClose={close}>
         <div className="pt-2 pb-7">
-          {Experiences.toReversed().map((exp, i) =>
+          {Experiences.map((exp, i) =>
             i % 2 === 0 ? (
-              <div key={exp.id} className="pl-5 py-3 bg-slate-200">
+              <div key={i} className="pl-5 py-3 bg-slate-200">
                 <div className="flex flex-col md:flex-row text-base md:text-xl font-semibold justify-between md:items-center">
                   <div className="flex">
                     <div>{exp.title}</div>
@@ -43,7 +42,7 @@ export default function ExperiencesModal({ tb = "Detail", sz = "md" }: Data) {
                 <div className="text-sm md:text-base">{exp.company}</div>
               </div>
             ) : (
-              <div key={exp.id} className="pl-5 py-3">
+              <div key={i} className="pl-5 py-3">
                 <div className="flex flex-col md:flex-row text-base md:text-xl font-semibold justify-between md:items-center">
                   <div className="flex">
                     <div>{exp.title}</div>
