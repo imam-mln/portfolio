@@ -69,16 +69,24 @@ function About() {
               delay: 0.2,
             }}
             className="xl:max-w-md mx-auto">
-            <Card shadow="sm" w={"100%"} padding="lg" radius="md" withBorder>
+            <Card
+              shadow="sm"
+              w={"100%"}
+              padding="lg"
+              px={10}
+              radius="md"
+              withBorder>
               <div className="flex flex-col md:flex-row gap-x-12 gap-y-5 items-center xl:gap-x-0 xl:block">
                 <img
                   className={`group rounded-full size-44 md:size-52 grayscale hover:bg-yellow-400 hover:grayscale-0 transition duration-500 ease-in-out xl:mb-5 mx-auto`}
                   src={Imam}
                   alt="Imam"
                 />
-                <div className="text-justify md:hidden max-w-xs text-sm md:text-xl xl:text-2xl ">
-                  <p className="text-slate-500 text-center">About me?</p>
-                  <p className="font-semibold">
+                <div className="text-justify md:hidden max-w-xs ">
+                  <p className="text-slate-500 text-center text-sm md:text-xl xl:text-2xl">
+                    About me?
+                  </p>
+                  <p className="font-semibold leading-tight text-xs  md:text-sm md:text-xl xl:text-2xl">
                     &emsp;&emsp;Someone who is interested in becoming Web
                     Developer and Network Engineer. Moreover, I always like to
                     learn about the current technologies that are popular. Love

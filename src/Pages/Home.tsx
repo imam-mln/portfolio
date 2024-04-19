@@ -93,7 +93,11 @@ function Home() {
             <Suspense
               fallback={<Skeleton visible={true} height={700} width={400} />}>
               <div className="z-10 m-auto">
-                <Image className="h-[95vh] " src={ImamV1} alt="Imam" />
+                <Image
+                  className="pt-6 md:pt-0 h-[95vh] md:h-full"
+                  src={ImamV1}
+                  alt="Imam"
+                />
               </div>
             </Suspense>
           </div>

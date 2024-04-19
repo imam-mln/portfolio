@@ -40,7 +40,7 @@ export const Projects:Data[] = [
             },
             {
                 media : "Github",
-                link: "https://github.com/imam-mln/portfolio-v1",
+                link: "https://github.com/imam-mln/portfolio",
                 icon: FiGithub,
             },
         ],
