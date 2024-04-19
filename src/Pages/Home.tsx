@@ -7,6 +7,7 @@ import { motion } from "framer-motion"
 import ImamV1 from "../assets/imam-1.png"
 
 function Home() {
+  window.scrollTo(0, 0)
   const fadeInSlideVariants = {
     hidden: {
       opacity: 0,
@@ -23,7 +24,6 @@ function Home() {
   }
 
   const location = useLocation().pathname
-  window.scrollTo(0, 0)
   useEffect(() => {
     location === "/"
       ? document.body.classList.add("overflow-y-hidden")
