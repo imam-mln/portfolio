@@ -86,7 +86,7 @@ function About() {
                   <p className="text-slate-500 text-center text-sm md:text-xl xl:text-2xl">
                     About me?
                   </p>
-                  <p className="font-semibold leading-tight text-xs  md:text-sm md:text-xl xl:text-2xl">
+                  <p className="font-semibold leading-tight text-xs  md:text-sm lg:text-xl xl:text-2xl">
                     &emsp;&emsp;Someone who is interested in becoming Web
                     Developer and Network Engineer. Moreover, I always like to
                     learn about the current technologies that are popular. Love
